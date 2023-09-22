@@ -9,20 +9,38 @@
   <body>
     <h1>Signs</h1>
     <div>
-      <img id="1" src="assets/category/no_park_logo.png" alt="Not allowed" />
+      <img id="1" src="assets/category/no_park_logo.png" alt="not_allowed" />
       <img
         id="2"
         src="assets/category/allowed_round_about_logo.png"
-        alt="Allowed"
+        alt="mandatory"
       />
-      <img id="3" src="assets/category/take_left_turn_logo.png" alt="Warning" />
-      <img id="4" src="assets/category/stop_logo.png" alt="Warning" />
-      <img id="5" src="assets/category/car_mentain.png" alt="Warning" />
-      <img id="6" src="assets/category/coffee_logo.png" alt="Warning" />
-      <img id="7" src="assets/category/plates_logo.png" alt="Warning" />
-      <img id="8" src="assets/category/cd_logo.png" alt="Warning" />
+      <img id="3" src="assets/category/take_left_turn_logo.png" alt="warning" />
+      <img id="4" src="assets/category/stop_logo.png" alt="priority" />
+      <img id="5" src="assets/category/car_mentain.png" alt="body" />
+      <img id="6" src="assets/category/coffee_logo.png" alt="information" />
+      <img id="7" src="assets/category/plates_logo.png" alt="plate" />
+      <img id="8" src="assets/category/cd_logo.png" alt="cd" />
     </div>
     <div id="list"></div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Modal Header</h2>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the Modal Body</p>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+    <!-- <button class="btn btn-open">Open Modal</button> -->
   </body>
-  <script src="app.js"></script>
+  <script type="module" src="app.js"></script>
 </html>
