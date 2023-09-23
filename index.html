@@ -4,11 +4,18 @@
     <meta name="viewport" content="width=device-width,viewport-fit=cover" />
     <title>Traffic signs</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- link the manifest -->
+    <link rel="manifest" href="manifest.json" />
+    <!-- add  theme-color -->
+    <meta name="theme-color" content="#ffc252" />
+    <!-- add icon for ios -->
+    <link rel="apple-touch-icon" href="/icons/icon-512.png" />
+    <script src="sw-register.js"></script>
   </head>
 
   <body>
-    <h1>Signs</h1>
-    <div>
+    <h1>የትራፊክ ምልክት</h1>
+    <div id="menu">
       <img id="1" src="assets/category/no_park_logo.png" alt="not_allowed" />
       <img
         id="2"
@@ -20,7 +27,6 @@
       <img id="5" src="assets/category/car_mentain.png" alt="body" />
       <img id="6" src="assets/category/coffee_logo.png" alt="information" />
       <img id="7" src="assets/category/plates_logo.png" alt="plate" />
-      <img id="8" src="assets/category/cd_logo.png" alt="cd" />
     </div>
     <div id="list"></div>
 
@@ -30,7 +36,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <span class="close">&times;</span>
-          <h2>Modal Header</h2>
+          <h2 class="modal-title">Modal Header</h2>
         </div>
         <div class="modal-body">
           <p>Some text in the Modal Body</p>
