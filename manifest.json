@@ -2,6 +2,7 @@
   "name": "sign",
   "short_name": "sign",
   "start_url": "./",
+  "background_color": " #ffc252",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#ffc252",
